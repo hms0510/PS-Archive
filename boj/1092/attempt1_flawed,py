@@ -1,0 +1,25 @@
+from collections import deque
+N = int(input())
+goods = list(map(int,input().split()))
+M = int(input())
+boxes_input = list(map(int,input().split()))
+
+goods.sort(reverse=True)
+boxes_input.sort(reverse=True)
+
+boxes = deque()
+for i in boxes_input:
+    boxes.append(i)
+    
+cnt = 0
+if goods[0] < boxes[0]:
+    print(-1)
+    exit()
+while boxes:
+    cnt += 1
+    for good in goods:
+        if boxes:
+            if good < boxes[0]:
+                continue
+            boxes.popleft()
+print(cnt)
