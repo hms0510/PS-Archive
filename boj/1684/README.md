@@ -10,7 +10,7 @@ n개의 정수로 된 수열이 주어졌을 때, 가장 큰 D를 구하면 된�
 
 ## Attempts
 ## Attempts1 - Accepted Solution
-<img width="355" height="264" alt="image" src="https://github.com/user-attachments/assets/83986d7b-84d0-4b0b-a3a6-47a6c4d6f88a" /> \n
+<img width="355" height="264" alt="image" src="https://github.com/user-attachments/assets/83986d7b-84d0-4b0b-a3a6-47a6c4d6f88a" /> <br>
 위의 사진에서 두 수의 나머지가 같도록하는 D에 대해 ③을 유도할 수 있었다. 이 식을 통해 D가 가장 커지기 위해선 D가 n₁ - n₂이면 된다는 것을 알 수 있다. 수가 여러 개일 때는 각 수들 사이의 차이가 여러 개 생길 수 있다.
 두 수의 경우에서 두 수를 각각 n₁ - n₂의 약수로 나누어도 나머지가 같기에 수가 여러 개 있을 때는 각 수의 차이들의 최대공약수를 D로 설정하면 된다는 것을 알 수 있다.
 
